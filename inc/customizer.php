@@ -1,6 +1,6 @@
 <?php
 /**
- * WP Bootstrap Starter Theme Customizer
+ * DM Theme Boilerplate Theme Customizer
  *
  * @package dm_theme_boilerplate
  */
