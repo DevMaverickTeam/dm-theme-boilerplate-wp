@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package dm_boilerplate_theme
+ * @package dm_theme_boilerplate
  */
 
 ?>
@@ -15,7 +15,7 @@
 			the_content();
 
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'dm-boilerplate-theme' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'dm-theme-boilerplate' ),
 				'after'  => '</div>',
 			) );
 		?>

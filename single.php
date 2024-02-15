@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package dm_boilerplate_theme
+ * @package dm_theme_boilerplate
  */
 
 get_header(); ?>

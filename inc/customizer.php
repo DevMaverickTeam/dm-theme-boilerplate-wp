@@ -2,7 +2,7 @@
 /**
  * WP Bootstrap Starter Theme Customizer
  *
- * @package dm_boilerplate_theme
+ * @package dm_theme_boilerplate
  */
 
 /**
@@ -15,14 +15,14 @@ function themeslug_sanitize_checkbox( $checked ) {
     return ( ( isset( $checked ) && true == $checked ) ? true : false );
 }
 
-function dm_boilerplate_theme_customize_register( $wp_customize ) {
+function dm_theme_boilerplate_customize_register( $wp_customize ) {
 
     //Style Preset
     $wp_customize->add_section(
         'typography',
         array(
-            'title' => __( 'Preset Styles', 'dm-boilerplate-theme' ),
-            //'description' => __( 'This is a section for the typography', 'dm-boilerplate-theme' ),
+            'title' => __( 'Preset Styles', 'dm-theme-boilerplate' ),
+            //'description' => __( 'This is a section for the typography', 'dm-theme-boilerplate' ),
             'priority' => 20,
         )
     );
@@ -35,7 +35,7 @@ function dm_boilerplate_theme_customize_register( $wp_customize ) {
         'sanitize_callback' => 'wp_filter_nohtml_kses',
     ) );
     $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'theme_option_setting', array(
-        'label' => __( 'Theme Option', 'dm-boilerplate-theme' ),
+        'label' => __( 'Theme Option', 'dm-theme-boilerplate' ),
         'section'    => 'typography',
         'settings'   => 'theme_option_setting',
         'type'    => 'select',
@@ -72,7 +72,7 @@ function dm_boilerplate_theme_customize_register( $wp_customize ) {
         'sanitize_callback' => 'wp_filter_nohtml_kses',
     ) );
     $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'preset_style_setting', array(
-        'label' => __( 'Typography', 'dm-boilerplate-theme' ),
+        'label' => __( 'Typography', 'dm-theme-boilerplate' ),
         'section'    => 'typography',
         'settings'   => 'preset_style_setting',
         'type'    => 'select',
@@ -94,7 +94,7 @@ function dm_boilerplate_theme_customize_register( $wp_customize ) {
     $wp_customize->add_section(
         'header_image',
         array(
-            'title' => __( 'Header Banner', 'dm-boilerplate-theme' ),
+            'title' => __( 'Header Banner', 'dm-theme-boilerplate' ),
             'priority' => 30,
         )
     );
@@ -103,7 +103,7 @@ function dm_boilerplate_theme_customize_register( $wp_customize ) {
     $wp_customize->add_control(
         'header_img',
         array(
-            'label' => __( 'Header Image', 'dm-boilerplate-theme' ),
+            'label' => __( 'Header Image', 'dm-theme-boilerplate' ),
             'section' => 'header_images',
             'type' => 'text',
         )
@@ -121,29 +121,29 @@ function dm_boilerplate_theme_customize_register( $wp_customize ) {
             $wp_customize,
             'header_bg_color',
             array(
-                'label'      => __( 'Header Banner Background Color', 'dm-boilerplate-theme' ),
+                'label'      => __( 'Header Banner Background Color', 'dm-theme-boilerplate' ),
                 'section'    => 'header_image',
                 'settings'   => 'header_bg_color_setting',
             ) )
     );
 
     $wp_customize->add_setting( 'header_banner_title_setting', array(
-        'default' => __( 'WP Bootstrap Framework', 'dm-boilerplate-theme' ),
+        'default' => __( 'WP Bootstrap Framework', 'dm-theme-boilerplate' ),
         'sanitize_callback' => 'wp_filter_nohtml_kses',
     ) );
     $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'header_banner_title_setting', array(
-        'label' => __( 'Banner Title', 'dm-boilerplate-theme' ),
+        'label' => __( 'Banner Title', 'dm-theme-boilerplate' ),
         'section'    => 'header_image',
         'settings'   => 'header_banner_title_setting',
         'type' => 'text'
     ) ) );
 
     $wp_customize->add_setting( 'header_banner_tagline_setting', array(
-        'default' => __( 'To customize the contents of this header banner and other elements of your site go to Dashboard - Appearance - Customize','dm-boilerplate-theme' ),
+        'default' => __( 'To customize the contents of this header banner and other elements of your site go to Dashboard - Appearance - Customize','dm-theme-boilerplate' ),
         'sanitize_callback' => 'wp_filter_nohtml_kses',
     ) );
     $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'header_banner_tagline_setting', array(
-        'label' => __( 'Banner Tagline', 'dm-boilerplate-theme' ),
+        'label' => __( 'Banner Tagline', 'dm-theme-boilerplate' ),
         'section'    => 'header_image',
         'settings'   => 'header_banner_tagline_setting',
         'type' => 'text'
@@ -154,7 +154,7 @@ function dm_boilerplate_theme_customize_register( $wp_customize ) {
     ) );
     $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'header_banner_visibility', array(
         'settings' => 'header_banner_visibility',
-        'label'    => __('Remove Header Banner', 'dm-boilerplate-theme'),
+        'label'    => __('Remove Header Banner', 'dm-theme-boilerplate'),
         'section'    => 'header_image',
         'type'     => 'checkbox',
     ) ) );
@@ -164,16 +164,16 @@ function dm_boilerplate_theme_customize_register( $wp_customize ) {
    $wp_customize->add_section(
         'site_name_text_color',
         array(
-            'title' => __( 'Other Customizations', 'dm-boilerplate-theme' ),
-            //'description' => __( 'This is a section for the header banner Image.', 'dm-boilerplate-theme' ),
+            'title' => __( 'Other Customizations', 'dm-theme-boilerplate' ),
+            //'description' => __( 'This is a section for the header banner Image.', 'dm-theme-boilerplate' ),
             'priority' => 40,
         )
     );
     $wp_customize->add_section(
         'colors',
         array(
-            'title' => __( 'Background Color', 'dm-boilerplate-theme' ),
-            //'description' => __( 'This is a section for the header banner Image.', 'dm-boilerplate-theme' ),
+            'title' => __( 'Background Color', 'dm-theme-boilerplate' ),
+            //'description' => __( 'This is a section for the header banner Image.', 'dm-theme-boilerplate' ),
             'priority' => 50,
             'panel' => 'styling_option_panel',
         )
@@ -181,8 +181,8 @@ function dm_boilerplate_theme_customize_register( $wp_customize ) {
     $wp_customize->add_section(
         'background_image',
         array(
-            'title' => __( 'Background Image', 'dm-boilerplate-theme' ),
-            //'description' => __( 'This is a section for the header banner Image.', 'dm-boilerplate-theme' ),
+            'title' => __( 'Background Image', 'dm-theme-boilerplate' ),
+            //'description' => __( 'This is a section for the header banner Image.', 'dm-theme-boilerplate' ),
             'priority' => 60,
             'panel' => 'styling_option_panel',
         )
@@ -190,20 +190,20 @@ function dm_boilerplate_theme_customize_register( $wp_customize ) {
 
     // Bootstrap and Fontawesome Option
     $wp_customize->add_setting( 'cdn_assets_setting', array(
-        'default' => __( 'no','dm-boilerplate-theme' ),
+        'default' => __( 'no','dm-theme-boilerplate' ),
         'sanitize_callback' => 'wp_filter_nohtml_kses',
     ) );
     $wp_customize->add_control( 
         'cdn_assets',
         array(
-            'label' => __( 'Use CDN for Assets', 'dm-boilerplate-theme' ),
-            'description' => __( 'All Bootstrap Assets and FontAwesome will be loaded in CDN.', 'dm-boilerplate-theme' ),
+            'label' => __( 'Use CDN for Assets', 'dm-theme-boilerplate' ),
+            'description' => __( 'All Bootstrap Assets and FontAwesome will be loaded in CDN.', 'dm-theme-boilerplate' ),
             'section' => 'site_name_text_color',
             'settings' => 'cdn_assets_setting',
 	        'type'    => 'select',
 	        'choices' => array(
-	            'yes' => __( 'Yes', 'dm-boilerplate-theme' ),
-	            'no' => __( 'No', 'dm-boilerplate-theme' ),
+	            'yes' => __( 'Yes', 'dm-theme-boilerplate' ),
+	            'no' => __( 'No', 'dm-theme-boilerplate' ),
         	)
         )
     );
@@ -217,21 +217,21 @@ function dm_boilerplate_theme_customize_register( $wp_customize ) {
     $wp_customize->get_control( 'background_color'  )->section = 'site_name_text_color';
 
     // Add control for logo uploader
-    $wp_customize->add_setting( 'dm_boilerplate_theme_logo', array(
-        //'default' => __( '', 'dm-boilerplate-theme' ),
+    $wp_customize->add_setting( 'dm_theme_boilerplate_logo', array(
+        //'default' => __( '', 'dm-theme-boilerplate' ),
         'sanitize_callback' => 'esc_url',
     ) );
-    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'dm_boilerplate_theme_logo', array(
-        'label'    => __( 'Upload Logo (replaces text)', 'dm-boilerplate-theme' ),
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'dm_theme_boilerplate_logo', array(
+        'label'    => __( 'Upload Logo (replaces text)', 'dm-theme-boilerplate' ),
         'section'  => 'title_tagline',
-        'settings' => 'dm_boilerplate_theme_logo',
+        'settings' => 'dm_theme_boilerplate_logo',
     ) ) );
 
 }
-add_action( 'customize_register', 'dm_boilerplate_theme_customize_register' );
+add_action( 'customize_register', 'dm_theme_boilerplate_customize_register' );
 
-add_action( 'wp_head', 'dm_boilerplate_theme_customizer_css');
-function dm_boilerplate_theme_customizer_css()
+add_action( 'wp_head', 'dm_theme_boilerplate_customizer_css');
+function dm_theme_boilerplate_customizer_css()
 
 {
     $header_bg_color = get_theme_mod('header_bg_color_setting', '#fff');
@@ -247,7 +247,7 @@ function dm_boilerplate_theme_customizer_css()
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
-function dm_boilerplate_theme_customize_preview_js() {
-    wp_enqueue_script( 'dm_boilerplate_theme_customizer', get_template_directory_uri() . '/inc/assets/js/customizer.js', array( 'customize-preview' ), '20151215', true );
+function dm_theme_boilerplate_customize_preview_js() {
+    wp_enqueue_script( 'dm_theme_boilerplate_customizer', get_template_directory_uri() . '/inc/assets/js/customizer.js', array( 'customize-preview' ), '20151215', true );
 }
-add_action( 'customize_preview_init', 'dm_boilerplate_theme_customize_preview_js' );
+add_action( 'customize_preview_init', 'dm_theme_boilerplate_customize_preview_js' );

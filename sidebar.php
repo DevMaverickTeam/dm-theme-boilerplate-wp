@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package dm_boilerplate_theme
+ * @package dm_theme_boilerplate
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {

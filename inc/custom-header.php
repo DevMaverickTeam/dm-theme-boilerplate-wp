@@ -8,33 +8,33 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package dm_boilerplate_theme
+ * @package dm_theme_boilerplate
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses dm_boilerplate_theme_header_style()
+ * @uses dm_theme_boilerplate_header_style()
  */
-function dm_boilerplate_theme_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'dm_boilerplate_theme_custom_header_args', array(
+function dm_theme_boilerplate_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'dm_theme_boilerplate_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => 'fff',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'dm_boilerplate_theme_header_style',
+		'wp-head-callback'       => 'dm_theme_boilerplate_header_style',
 	) ) );
 }
-add_action( 'after_setup_theme', 'dm_boilerplate_theme_custom_header_setup' );
+add_action( 'after_setup_theme', 'dm_theme_boilerplate_custom_header_setup' );
 
-if ( ! function_exists( 'dm_boilerplate_theme_header_style' ) ) :
+if ( ! function_exists( 'dm_theme_boilerplate_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog.
  *
- * @see dm_boilerplate_theme_custom_header_setup().
+ * @see dm_theme_boilerplate_custom_header_setup().
  */
-function dm_boilerplate_theme_header_style() {
+function dm_theme_boilerplate_header_style() {
 	$header_text_color = get_header_textcolor();
 
 	/*

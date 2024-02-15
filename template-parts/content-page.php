@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package dm_boilerplate_theme
+ * @package dm_theme_boilerplate
  */
 
 ?>
@@ -24,7 +24,7 @@
 			the_content();
 
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'dm-boilerplate-theme' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'dm-theme-boilerplate' ),
 				'after'  => '</div>',
 			) );
 		?>
@@ -36,7 +36,7 @@
 				edit_post_link(
 					sprintf(
 						/* translators: %s: Name of current post */
-						esc_html__( 'Edit %s', 'dm-boilerplate-theme' ),
+						esc_html__( 'Edit %s', 'dm-theme-boilerplate' ),
 						the_title( '<span class="screen-reader-text">"', '"</span>', false )
 					),
 					'<span class="edit-link">',
