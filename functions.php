@@ -294,3 +294,11 @@ require get_template_directory() . '/inc/plugin-compatibility/plugin-compatibili
 if ( ! class_exists( 'wp_bootstrap_navwalker' )) {
     require_once(get_template_directory() . '/inc/wp_bootstrap_navwalker.php');
 }
+
+
+require_once('config/shortcodes.php');
+require_once('config/assets.php');
+require_once('config/acf-style.php');
+require_once('config/acf-option-pages.php');
+require_once('config/post-types.php');
+require_once('config/custom-taxonomies.php');

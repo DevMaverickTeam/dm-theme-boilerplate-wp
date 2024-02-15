@@ -17,8 +17,6 @@ class DM_Project_Post_Types {
                 'singular' => 'Photographer',
                 'slug' => 'photographer',
             ],
-
-
         ];
 
         foreach ($post_types as $key => $post_type) {
@@ -34,25 +32,25 @@ class DM_Project_Post_Types {
         $slug = $data['slug'];
 
         $labels = array(
-            'name'               => _x( $plural, 'post type general name', 'dm-custom-theme' ),
-            'singular_name'      => _x( $singular, 'post type singular name', 'dm-custom-theme' ),
-            'menu_name'          => _x( $plural, 'admin menu', 'dm-custom-theme' ),
-            'name_admin_bar'     => _x( $singular, 'add new on admin bar', 'dm-custom-theme' ),
-            'add_new'            => _x( 'Add New', $singular, 'dm-custom-theme' ),
-            'add_new_item'       => __( 'Add New ' . $singular, 'dm-custom-theme' ),
-            'new_item'           => __( 'New ' . $singular, 'dm-custom-theme' ),
-            'edit_item'          => __( 'Edit ' . $singular, 'dm-custom-theme' ),
-            'view_item'          => __( 'View ' . $singular, 'dm-custom-theme' ),
-            'all_items'          => __( 'All ' . $plural, 'dm-custom-theme' ),
-            'search_items'       => __( 'Search ' . $plural, 'dm-custom-theme' ),
-            'parent_item_colon'  => __( 'Parent ' . $plural . ':', 'dm-custom-theme' ),
-            'not_found'          => __( 'No ' . $plural . ' found.', 'dm-custom-theme' ),
-            'not_found_in_trash' => __( 'No ' . $plural . ' found in Trash.', 'dm-custom-theme' )
+            'name'               => _x( $plural, 'post type general name', 'dm-theme-boilerplate' ),
+            'singular_name'      => _x( $singular, 'post type singular name', 'dm-theme-boilerplate' ),
+            'menu_name'          => _x( $plural, 'admin menu', 'dm-theme-boilerplate' ),
+            'name_admin_bar'     => _x( $singular, 'add new on admin bar', 'dm-theme-boilerplate' ),
+            'add_new'            => _x( 'Add New', $singular, 'dm-theme-boilerplate' ),
+            'add_new_item'       => __( 'Add New ' . $singular, 'dm-theme-boilerplate' ),
+            'new_item'           => __( 'New ' . $singular, 'dm-theme-boilerplate' ),
+            'edit_item'          => __( 'Edit ' . $singular, 'dm-theme-boilerplate' ),
+            'view_item'          => __( 'View ' . $singular, 'dm-theme-boilerplate' ),
+            'all_items'          => __( 'All ' . $plural, 'dm-theme-boilerplate' ),
+            'search_items'       => __( 'Search ' . $plural, 'dm-theme-boilerplate' ),
+            'parent_item_colon'  => __( 'Parent ' . $plural . ':', 'dm-theme-boilerplate' ),
+            'not_found'          => __( 'No ' . $plural . ' found.', 'dm-theme-boilerplate' ),
+            'not_found_in_trash' => __( 'No ' . $plural . ' found in Trash.', 'dm-theme-boilerplate' )
         );
 
         $args = array(
             'labels'             => $labels,
-            'description'        => __( $singular .'.', 'dm-custom-theme' ),
+            'description'        => __( $singular .'.', 'dm-theme-boilerplate' ),
             'public'             => true,
             'publicly_queryable' => true,
             'show_ui'            => true,
