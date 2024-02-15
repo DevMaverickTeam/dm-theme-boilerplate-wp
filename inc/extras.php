@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package WP_Bootstrap_Starter
+ * @package dm_boilerplate_theme
  */
 
 /**
@@ -13,7 +13,7 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
-function wp_bootstrap_starter_body_classes( $classes ) {
+function dm_boilerplate_theme_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author.
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
@@ -30,21 +30,21 @@ function wp_bootstrap_starter_body_classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'wp_bootstrap_starter_body_classes' );
+add_filter( 'body_class', 'dm_boilerplate_theme_body_classes' );
 
 /**
  * Add a pingback url auto-discovery header for singularly identifiable articles.
  */
-function wp_bootstrap_starter_pingback_header() {
+function dm_boilerplate_theme_pingback_header() {
 	echo '<link rel="pingback" href="', esc_url( get_bloginfo( 'pingback_url' ) ), '">';
 }
-add_action( 'wp_head', 'wp_bootstrap_starter_pingback_header' );
+add_action( 'wp_head', 'dm_boilerplate_theme_pingback_header' );
 
 
 /**
  * Return the header class
  */
-function wp_bootstrap_starter_bg_class() {
+function dm_boilerplate_theme_bg_class() {
     switch (get_theme_mod( 'theme_option_setting' )) {
         case "cerulean":
             return 'navbar-dark bg-primary';

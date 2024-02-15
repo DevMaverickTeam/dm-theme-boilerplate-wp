@@ -103,7 +103,7 @@ WP Bootstrap Starter includes support for Infinite Scroll in Jetpack.
 * Fix the sorting isssue on Woocommerce Shop Page
 
 = 3.2.6 - August 15, 2019 =
-* wp-bootstrap-starter/woocommerce/cart/cart.php version 3.5.0 is out of date. The core version is 3.7.0
+* dm-boilerplate-theme/woocommerce/cart/cart.php version 3.5.0 is out of date. The core version is 3.7.0
 * Remove duplicate link - pingback tag on header.php
 * Remove the condition on extras.php for the link - pingback tag
 
