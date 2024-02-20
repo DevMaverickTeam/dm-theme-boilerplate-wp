@@ -162,13 +162,10 @@ add_action( 'widgets_init', 'dm_theme_boilerplate_widgets_init' );
  */
 function dm_theme_boilerplate_scripts() {
 	// load bootstrap css
-    if ( get_theme_mod( 'cdn_assets_setting' ) === 'yes' ) {
-        wp_enqueue_style( 'dm-theme-boilerplate-bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css' );
-        wp_enqueue_style( 'dm-theme-boilerplate-fontawesome-cdn', 'https://use.fontawesome.com/releases/v5.15.1/css/all.css' );
-    } else {
-        wp_enqueue_style( 'dm-theme-boilerplate-bootstrap-css', get_template_directory_uri() . '/inc/assets/css/bootstrap.min.css' );
-        wp_enqueue_style( 'dm-theme-boilerplate-fontawesome-cdn', get_template_directory_uri() . '/inc/assets/css/fontawesome.min.css' );
-    }
+
+    wp_enqueue_style( 'dm-theme-boilerplate-bootstrap-css', get_template_directory_uri() . '/inc/assets/css/bootstrap.min.css' );
+    wp_enqueue_style( 'dm-theme-boilerplate-fontawesome-cdn', get_template_directory_uri() . '/inc/assets/css/fontawesome.min.css' );
+
 	// load bootstrap css
 	// load AItheme styles
 	// load DM Theme Boilerplate styles
@@ -207,13 +204,8 @@ function dm_theme_boilerplate_scripts() {
 	wp_enqueue_script('jquery');
 
 	// load bootstrap js
-    if ( get_theme_mod( 'cdn_assets_setting' ) === 'yes' ) {
-        wp_enqueue_script('dm-theme-boilerplate-popper', 'https://cdn.jsdelivr.net/npm/popper.js@1/dist/umd/popper.min.js', array(), '', true );
-    	wp_enqueue_script('dm-theme-boilerplate-bootstrapjs', 'https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js', array(), '', true );
-    } else {
-        wp_enqueue_script('dm-theme-boilerplate-popper', get_template_directory_uri() . '/inc/assets/js/popper.min.js', array(), '', true );
-        wp_enqueue_script('dm-theme-boilerplate-bootstrapjs', get_template_directory_uri() . '/inc/assets/js/bootstrap.min.js', array(), '', true );
-    }
+    wp_enqueue_script('dm-theme-boilerplate-popper', get_template_directory_uri() . '/inc/assets/js/popper.min.js', array(), '', true );
+    wp_enqueue_script('dm-theme-boilerplate-bootstrapjs', get_template_directory_uri() . '/inc/assets/js/bootstrap.min.js', array(), '', true );
     wp_enqueue_script('dm-theme-boilerplate-themejs', get_template_directory_uri() . '/inc/assets/js/theme-script.min.js', array(), '', true );
 	wp_enqueue_script( 'dm-theme-boilerplate-skip-link-focus-fix', get_template_directory_uri() . '/inc/assets/js/skip-link-focus-fix.min.js', array(), '20151215', true );
 
