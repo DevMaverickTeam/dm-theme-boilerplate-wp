@@ -1,14 +1,14 @@
 === DM Theme Boilerplate ===
 
-Tags: blog, custom-menu, featured-images, threaded-comments, translation-ready, right-sidebar, custom-background, e-commerce, theme-options, sticky-post, full-width-template
+Tags: blog, custom-menu, featured-images, threaded-comments, translation-ready, right-sidebar, e-commerce, sticky-post, full-width-template
 Requires at least: 4.0
-Tested up to: 4.7
+Tested up to: 6.3.4
 
-Copyright (c) 2016 by Afterimage Designs (http://afterimagedesigns.com/)
+Copyright (c) 2024 by DevMaverick (https://devmaverick.com/)
 This Theme is distributed under the terms of the GNU GPL.
 
-License: GNU General Public License v2.0
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License: GNU General Public License v3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 == Description ==
 
@@ -25,7 +25,7 @@ Page templates
 * Blank without container Page
 
 Other features:
-* Currently using Bootstrap v4.3.1
+* Currently using Bootstrap v5.3.2
 * Font Awesome integrated
 * Widgetized footer area
 * WooCommerce ready
