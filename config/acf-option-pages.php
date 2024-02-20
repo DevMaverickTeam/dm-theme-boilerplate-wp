@@ -8,14 +8,14 @@
         ));
 
         acf_add_options_sub_page(array(
-            'page_title'  => __('Site Constants'),
-            'menu_title'  => __('Site Constants'),
+            'page_title'  => __('Child Settings Page 1'),
+            'menu_title'  => __('Child Settings Page 1'),
             'parent_slug' => $parent['menu_slug'],
         ));
 
         acf_add_options_sub_page(array(
-            'page_title'  => __('Zoho Forms Shortcodes'),
-            'menu_title'  => __('Zoho Forms Shortcodes'),
+            'page_title'  => __('Child Settings Page 2'),
+            'menu_title'  => __('Child Settings Page 2'),
             'parent_slug' => $parent['menu_slug'],
         ));
         
