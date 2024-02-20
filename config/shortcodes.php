@@ -7,9 +7,9 @@ class DM_Shortcodes {
 	}
 
 	public function register_shortcodes() {
-		add_shortcode('dm-industries-display',  array( $this, 'dm_industries_display_shortcode')); 
-		add_shortcode('dm-contact-support-modal', array( $this, 'contact_support_modal'));
-        add_shortcode('dm-sitemap-pages', array( $this, 'dm_sitemap_shortcode'));
+		add_shortcode('dm-shortcode-passing-variable',  array( $this, 'dm_shortcode_passing_variable')); 
+		add_shortcode('dm-shortcode-rendered-only-on-front', array( $this, 'dm_shortcode_rendered_only_on_front'));
+        add_shortcode('dm-shortcode-simple', array( $this, 'dm_shortcode_simple'));
 	}
 
 
@@ -23,24 +23,24 @@ class DM_Shortcodes {
 		return ob_get_clean();
 	}
 
-	function dm_industries_display_shortcode($atts) { 
+	function dm_shortcode_passing_variable($atts) { 
         $a = shortcode_atts( array(
             'exclude' => '',
         ), $atts );
     
-		return $this->render_template('/template-parts/shortcodes/industries-display-shortcode.php', $a);	
+		return $this->render_template('/template-parts/shortcodes/shortcode-example-variable.php', $a);	
 	}
 
-	function contact_support_modal() {
+	function dm_shortcode_rendered_only_on_front() {
 		if ( is_admin() ) return 'This shortcode only works on the frontend';
 	
 		ob_start();
-		require(get_stylesheet_directory() . '/template-parts/modals/contact-support-modal.php');
+		require(get_stylesheet_directory() . '/template-parts/shortcodes/shortcode-example-simple.php');
 		return ob_get_clean();
 	}
 
-    function dm_sitemap_shortcode() {
-        return $this->render_template('/template-parts/shortcodes/sitemap-shortcode.php');
+    function dm_shortcode_simple() {
+        return $this->render_template('/template-parts/shortcodes/shortcode-example-simple.php');
 	}
 
 } 
