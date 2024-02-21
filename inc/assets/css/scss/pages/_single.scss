@@ -7,17 +7,15 @@
 
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-    float: left;
-    width: 50%;
-}
-
+.post-navigation .nav-previous, 
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
-    float: right;
-    text-align: right;
-    width: 50%;
+    width: 49%;
+
+    @include sm {
+        width: 100%;
+    }
 }
 
 .single .byline,
@@ -75,15 +73,8 @@
 
         .nav-previous a,
         .nav-next a {
-            border: 1px solid $light-blue;
-            border-radius: 0.938rem;
             display: inline-block;
-            padding: 0.313rem 0.875rem;
             text-decoration: none;
-
-            @include on-event {
-                background: $light-grey none repeat scroll 0 0;
-            }
         }
 
         .nav-next a::after {

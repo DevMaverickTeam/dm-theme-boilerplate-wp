@@ -1,0 +1,126 @@
+.comments-area {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid $dark-blue;
+}
+
+.comment-respond {
+    padding-top: 1rem;
+
+    .alert-info {
+        background-color: $light-blue;
+        color: $dark-blue;
+        border: none;
+        padding: 1.5rem;
+    }
+}
+
+.comment-list {
+    border-bottom: 1px solid $light-blue;
+    padding-bottom: 4rem;
+}
+
+.comment-body {
+    @include flexbox;
+
+    .media-body {
+        width: calc(100% - 50px);
+
+        .card-header {
+            font-size: 1.6rem;
+            background-color: transparent;
+            padding: 1rem; 
+            border-bottom: 1px solid $light-blue;
+        }
+
+        h5 {
+            margin-bottom: 0;
+            font-size: 1.6rem;
+            font-weight: 500;
+            font-family: $firacode;
+
+            cite {
+                font-style: normal;
+                font-weight: 600;
+            }
+        }
+
+        .media-body-wrap {
+            border: 1px solid $light-blue;
+        }
+    }
+
+}
+
+.comment-awaiting-moderation {
+    padding: 1rem;
+    background-color: orange;
+    color: white;
+}
+
+.comment-author-admin {
+    .comment-body {
+        .media-body-wrap {
+            border: 1px solid $brand-color;
+        }
+    }
+}
+
+.avatar {
+    border-radius: 5px;
+}
+
+footer.reply.comment-reply.card-footer {
+    @include flexbox;
+    justify-content: end;
+    padding: 1rem;
+    background-color: transparent;
+    border-top: 0;
+
+    .btn {
+        font-size: 1.6rem;
+        background-color: $brand-color;
+        border: 1px solid $brand-color;
+        padding: 0.5rem 1rem;
+
+        @include on-event {
+            background-color: $dark-blue;
+            border: 1px solid $dark-blue;
+            text-decoration: none;
+        }
+    }
+}
+
+.comment-meta {
+    font-size: 1.4rem;
+
+    a {
+        color: $dark-blue;
+        text-decoration: none!important;
+    }
+}
+
+
+
+.comment-form {
+    textarea {
+        font-size: 1.6rem;
+        padding: 1.5rem;
+        border: 1px solid $dark-blue;
+    }
+
+    .comment-form-author,
+    .comment-form-email,
+    .comment-form-url {
+        label {
+            width: 100px;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        input {
+            font-size: 1.6rem;
+            padding: 0.5rem 1rem;
+        }
+    }
+}

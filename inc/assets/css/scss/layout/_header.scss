@@ -60,7 +60,7 @@ body #masthead {
             }
         }
 
-        .current_page_item > a {
+        &.current_page_item > a {
             color: $white;
             border-bottom: 1px solid $white;
             text-decoration: none;

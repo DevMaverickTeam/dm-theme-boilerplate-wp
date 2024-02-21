@@ -3,3 +3,20 @@
 // When having several themes, this file contains everything related to the
 // default one.
 // -----------------------------------------------------------------------------
+
+.post-navigation .nav-previous a,
+.post-navigation .nav-next a {
+    padding: 0.5rem 1.5rem;
+    border: 1px solid $dark-blue;
+    border-radius: 8px;
+    background-color: $light-blue;
+    color: $dark-blue;
+    font-weight: 600;
+    transition: 0.25s;
+
+    @include on-event {
+        background-color: $dark-blue;
+        color: $white;
+        border: 1px solid $dark-blue;
+    }
+}

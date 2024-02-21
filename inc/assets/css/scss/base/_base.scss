@@ -155,8 +155,10 @@ object {
 }
 
 #content.site-content {
-    padding-bottom: 3.75rem;
-    padding-top: 4.125rem;
+    padding-bottom: 4rem;
+    padding-top: 5rem;
+
+    min-height: calc(100vh - 115px);
 }
 
 
