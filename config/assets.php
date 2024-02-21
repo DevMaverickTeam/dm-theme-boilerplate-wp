@@ -10,7 +10,7 @@ class DM_Project_Assets {
 
     public function register_assets() {
         // CSS
-        wp_register_style( 'dm-main-min', get_template_directory_uri() . '/inc/assets/main.min.css', [], DM_BOILERPPLATE_VERSION );
+        wp_register_style( 'dm-main-min', get_template_directory_uri() . '/inc/assets/css/main.css', [], DM_BOILERPPLATE_VERSION );
         wp_register_style( 'dm-theme-boilerplate-bootstrap-css', get_template_directory_uri() . '/inc/assets/css/bootstrap.min.css',[], DM_BOILERPPLATE_VERSION );
 
         // Fonts
