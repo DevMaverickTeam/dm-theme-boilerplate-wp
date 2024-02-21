@@ -49,14 +49,10 @@ body #masthead {
                 text-decoration: none;
             }
 
-            @include md {
-                padding-bottom: 0.625rem;
-                padding-top: 0.313rem;
-            }
 
-            @include sm {
-                padding-bottom: 0.938rem;
-                padding-top: 0.938rem;
+            @include lg {
+                padding: 0.5rem 0 0 0;
+                display: inline-block;
             }
         }
 
@@ -69,8 +65,37 @@ body #masthead {
 
 }
 
+.navbar-toggler {
+    outline: none;
+
+    #menu-closed {
+        display: none;   
+    }
+
+    #menu-opened {
+        display: block;
+    }
+
+    &.collapsed {
+        #menu-opened {
+            display: none;
+        }
+
+        #menu-closed {
+            display: block;   
+        }
+    }
+}
+
 .navbar-nav {
     column-gap: 2.5rem;
+
+    @include lg {
+        row-gap: 1rem;
+        padding: 2rem 0;
+        border-top: 1px solid $white;
+        margin-top: 1rem;
+    }
 
     .dropdown-menu {
         @include lg {

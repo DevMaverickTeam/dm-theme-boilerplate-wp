@@ -47,8 +47,9 @@
                     <?php endif; ?>
 
                 </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
+                    <span id="menu-closed" class="material-symbols-outlined text-white">menu</span>
+                    <span id="menu-opened" class="material-symbols-outlined text-white">menu_open</span>
                 </button>
 
                 <?php
