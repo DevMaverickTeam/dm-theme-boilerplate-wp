@@ -139,8 +139,8 @@ object {
         position: relative;
 
         &::before {
-            content: '\f08d';
-            font-family: "Font Awesome\ 5 Free";
+            content: '\e87d';
+            font-family: $material-icons;
             font-size: 1.8rem;
             left: -2.5rem;
             position: absolute;

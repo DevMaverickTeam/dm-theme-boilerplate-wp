@@ -7,7 +7,7 @@
 
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
-.post-navigation .nav-previous, 
+.post-navigation .nav-previous,
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -73,16 +73,20 @@
 
         .nav-previous a,
         .nav-next a {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            column-gap: 1rem;
             text-decoration: none;
         }
 
         .nav-next a::after {
-            content: " \2192";
+            content: " \e409";
+            font-family: $material-icons;
         }
 
         .nav-previous a::before {
-            content: "\2190 ";
+            content: "\e408";
+            font-family: $material-icons;
         }
     }
 
@@ -104,7 +108,7 @@
         margin-bottom: 4rem;
     }
 
-    .entry-content{
+    .entry-content {
         a {
             text-decoration: underline;
             font-weight: 600;
