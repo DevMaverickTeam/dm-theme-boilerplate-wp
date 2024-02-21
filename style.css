@@ -220,27 +220,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 24px;
   margin-bottom: 15px;
 }
-h1 {
-  font-size: 32px;
-  padding-bottom: 10px;
-}
-h2 {
-  font-size: 24px;
-  padding-bottom: 0.3em;
-  line-height: 1.25;
-}
-h3 {
-  font-size: 18px;
-  line-height: 25px;
-}
-h4 {
-  font-size: 16px;
-  line-height: 20px;
-}
-h5 {
-  font-size: 14px;
-  line-height: 17.5px;
-}
 
 p {
   margin-bottom: 1.5em;
@@ -296,7 +275,7 @@ header#masthead {
 
 .navbar-brand > a {
   color: rgba(0, 0, 0, 0.9);
-  font-size: 1.1rem;
+  font-size: 1.8rem;
   outline: medium none;
   text-decoration: none;
   color: #fff;
@@ -307,54 +286,6 @@ header#masthead {
   text-decoration: none;
 }
 
-#page-sub-header {
-  position: relative;
-  padding-top: 5rem;
-  padding-bottom: 0;
-  text-align: center;
-  font-size: 1.25rem;
-  background-size: cover !important;
-}
-
-body:not(.theme-preset-active) #page-sub-header h1 {
-  line-height: 1.6;
-  font-size: 4rem;
-  color: #563e7c;
-  margin: 0 0 1rem;
-  border: 0;
-  padding: 0;
-}
-
-#page-sub-header p {
-  margin-bottom: 0;
-  line-height: 1.4;
-  font-size: 1.25rem;
-  font-weight: 300;
-}
-body:not(.theme-preset-active) #page-sub-header p {
-color: #212529;
-}
-a.page-scroller {
-  color: #333;
-  font-size: 2.6rem;
-  display: inline-block;
-  margin-top: 2rem;
-}
-
-@media screen and (min-width: 768px) {
-  body:not(.theme-preset-active) #page-sub-header h1 {
-    font-size: 3.750rem;
-  }
-  body:not(.theme-preset-active) #page-sub-header {
-    font-size: 1.25rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  #page-sub-header p {
-    max-width: 43rem;
-    margin: 0 auto;
-  }
-}
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
@@ -370,14 +301,13 @@ body:not(.theme-preset-active) #masthead .navbar-nav > li > a {
   color: #cdbfe3;
   padding: 0.5rem;
   font-weight: 500;
-  font-size: 0.875rem;
+  font-size: 1.4rem;
 }
 
 body:not(.theme-preset-active) #masthead .navbar-nav > li > a:hover,
 body:not(.theme-preset-active) #masthead .navbar-nav > li.current_page_item > a {
   color: #fff;
   font-weight: 600;
-  /*background: #f9f9f9;*/
 }
 
 .navbar-brand {
@@ -575,7 +505,7 @@ body:not(.theme-preset-active) #masthead .navbar-nav > li.current_page_item > a 
   clip: auto !important;
   color: #21759b;
   display: block;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-size: 0.875rem;
   font-weight: bold;
   height: auto;
@@ -682,7 +612,7 @@ a img.aligncenter {
 --------------------------------------------------------------*/
 .widget {
   margin: 0 0 1.5em;
-  font-size: 0.875rem;
+  font-size: 1.4rem;
   /* Make sure select elements fit in widgets. */
 }
 .widget select {
@@ -720,7 +650,7 @@ a img.aligncenter {
 .sticky .entry-title::before {
   content: '\f08d';
   font-family: "Font Awesome\ 5 Free";
-  font-size: 1.563rem;
+  font-size: 1.8rem;
   left: -2.5rem;
   position: absolute;
   top: 0.375rem;
@@ -788,7 +718,7 @@ a img.aligncenter {
 }
 
 .comments-title {
-  font-size: 1.125rem;
+  font-size: 1.8rem;
 }
 
 .comment-list .pingback {
@@ -853,10 +783,10 @@ object {
   width: auto;
 }
 .wp-caption .wp-caption-text {
-  font-size: 0.688rem;
-  line-height: 1.063rem;
+  font-size: 1.2rem;
+  line-height: 1.3em;
   margin: 0;
-  padding: 0.625rem;
+  padding: 0.8rem;
 }
 
 .wp-caption-text {
@@ -916,7 +846,7 @@ object {
 }
 
 .variations_form .variations .value > select {
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.8rem;
 }
 
 .woocommerce-MyAccount-content .col-1,
@@ -970,7 +900,7 @@ body:not(.theme-preset-active) footer#colophon {
   color: #fff;
 }
 .copyright {
-  font-size: 0.875rem;
+  font-size: 1.4rem;
   margin-bottom: 0;
   text-align: center;
 }
