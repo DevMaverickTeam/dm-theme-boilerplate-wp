@@ -20,7 +20,7 @@
             <div class="site-info">
                 &copy; <?php echo date('Y'); ?> <?php echo '<a href="'.home_url().'">'.get_bloginfo('name').'</a>'; ?>
                 <span class="sep"> | </span>
-                <a class="credits" href="https://devmaverick.com/" target="_blank" title="WordPress Technical Support" alt="DM Theme Boilerplate"><?php echo esc_html__('DM Theme Boilerplate','dm-theme-boilerplate'); ?></a>
+                Made with <span class="material-symbols-outlined">favorite</span> by <a class="credits" href="https://devmaverick.com/" target="_blank" title="DevMaverick" alt="DevMaverick"><?php echo esc_html__('DevMaverick','dm-theme-boilerplate'); ?></a>
 
             </div><!-- close .site-info -->
 		</div>

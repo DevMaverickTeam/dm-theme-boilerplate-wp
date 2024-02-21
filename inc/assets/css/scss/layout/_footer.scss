@@ -14,8 +14,11 @@ footer {
     }
 }
 
-.navbar-dark .site-info {
-    color: $white;
+.site-info {
+    .material-symbols-outlined {
+        font-size: 1.2rem;
+    }
+    
 }
 
 .copyright {
