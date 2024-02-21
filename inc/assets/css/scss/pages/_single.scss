@@ -1,0 +1,123 @@
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
+    margin: 0 0 1.5em;
+    overflow: hidden;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+    float: left;
+    width: 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+    float: right;
+    text-align: right;
+    width: 50%;
+}
+
+.single .byline,
+.group-blog .byline {
+    display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+    margin: 1.5em 0 0;
+}
+
+.comment-content {
+    a {
+        word-wrap: break-word;
+    }
+
+    &.card-block {
+        padding: 20px;
+    }
+}
+
+.bypostauthor {
+    display: block;
+}
+
+.comment-body {
+    .pull-left {
+        padding-right: 0.625rem;
+    }
+}
+
+.comment-list {
+    padding-left: 0;
+
+    .comment {
+        display: block;
+    }
+
+    .pingback {
+        border-top: 1px solid rgba(0, 0, 0, 0.125);
+        padding: 0.563rem 0;
+
+        &:first-child {
+            border: medium none;
+        }
+    }
+}
+
+
+.navigation {
+    &.post-navigation {
+        padding-top: 1.875rem;
+
+        .nav-previous a,
+        .nav-next a {
+            border: 1px solid $light-blue;
+            border-radius: 0.938rem;
+            display: inline-block;
+            padding: 0.313rem 0.875rem;
+            text-decoration: none;
+
+            @include on-event {
+                background: $light-grey none repeat scroll 0 0;
+            }
+        }
+
+        .nav-next a::after {
+            content: " \2192";
+        }
+
+        .nav-previous a::before {
+            content: "\2190 ";
+        }
+    }
+
+}
+
+.page-links {
+    clear: both;
+    margin: 0 0 1.5em;
+}
+
+
+.page-template-blank-page .entry-content,
+.blank-page-with-container .entry-content {
+    margin-top: 0;
+}
+
+.post.hentry {
+    margin-bottom: 4rem;
+}
+
+.posted-on,
+.byline,
+.comments-link {
+    color: #9a9a9a;
+}
+
+.entry-title>a {
+    color: inherit;
+}

@@ -1,0 +1,16 @@
+.widget {
+    margin: 0 0 1.5em;
+    font-size: 1.4rem;
+
+    select {
+        max-width: 100%;
+    }
+}
+
+.widget_search .search-form input[type="submit"] {
+    display: none;
+}
+
+.widget_categories .nav-link {
+    display: inline-block;
+}

@@ -1,0 +1,14 @@
+.elementor-page {
+    article .entry-footer {
+        display: none;
+    }
+
+    &.page-template-fullwidth #content.site-content {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    .entry-content {
+        margin-top: 0;
+    }
+}

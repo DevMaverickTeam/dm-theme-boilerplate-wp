@@ -9,7 +9,11 @@
 
 // 2. Vendors
 @import
-  'vendor/normalize';
+  'vendor/normalize',
+  'vendor/elementor',
+  'vendor/jetpack',
+  'vendor/vc',
+  'vendor/woocommerce';
 
 // 3. Base stuff
 @import
@@ -26,11 +30,13 @@
 // 5. Components
 @import
   'components/button', 
+  'components/gallery',
   'components/widgets';
 
 // 6. Page-specific styles
 @import
-  'pages/home';
+  'pages/home', 
+  'pages/single';
 
 // 7. Themes
 @import

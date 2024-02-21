@@ -27,7 +27,6 @@ class DM_Project_Assets {
 
 
     public function enqueue_assets() {
-        wp_enqueue_style( 'dm-theme-boilerplate-style', get_stylesheet_uri() );
         wp_enqueue_style('dm-theme-boilerplate-bootstrap-css');
         wp_enqueue_style('dm-theme-boilerplate-halant');
         wp_enqueue_style('dm-theme-boilerplate-open-sans');

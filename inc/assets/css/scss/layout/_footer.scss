@@ -2,3 +2,27 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+
+footer {
+    color: #99979c;
+    background-color: #f7f7f7;
+
+    &#colophon {
+        font-size: 85%;
+    }
+}
+
+.navbar-dark .site-info {
+    color: #fff;
+}
+
+.copyright {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.copyright a,
+footer#colophon a {
+    color: inherit;
+}
