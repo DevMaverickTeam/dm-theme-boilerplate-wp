@@ -8,8 +8,8 @@
   'abstracts/breakpoints';
 
 // 2. Vendors
-// @import
-//   'vendor/normalize';
+@import
+  'vendor/normalize';
 
 // 3. Base stuff
 @import
@@ -25,7 +25,8 @@
 
 // 5. Components
 @import
-  'components/button';
+  'components/button', 
+  'components/widgets';
 
 // 6. Page-specific styles
 @import

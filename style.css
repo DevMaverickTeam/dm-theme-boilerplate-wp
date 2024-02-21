@@ -16,10 +16,7 @@ Tags: blog, custom-menu, featured-images, threaded-comments, translation-ready, 
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Normalize
-# Typography
-# Elements
-# Forms
+
 # Navigation
 	## Links
 	## Menus
@@ -37,228 +34,7 @@ Tags: blog, custom-menu, featured-images, threaded-comments, translation-ready, 
 # Woocommerce
 # Footer
 --------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Normalize
---------------------------------------------------------------*/
-body {
-  margin: 0;
-  -webkit-font-smoothing: auto;
-}
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block;
-}
-
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-  vertical-align: baseline;
-}
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-[hidden],
-template {
-  display: none;
-}
-
-a {
-  background-color: transparent;
-}
-
-a:active,
-a:hover {
-  outline: 0;
-}
-
-dfn {
-  font-style: italic;
-}
-
-mark {
-  background: #ff0;
-  color: #000;
-}
-
-small {
-  font-size: 80%;
-}
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sup {
-  top: -0.5em;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-img {
-  border: 0;
-}
-
-svg:not(:root) {
-  overflow: hidden;
-}
-
-figure {
-  margin: 1em 2.5rem;
-}
-
-hr {
-  box-sizing: content-box;
-  height: 0;
-}
-
-button {
-  overflow: visible;
-}
-
-button,
-select {
-  text-transform: none;
-}
-
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer;
-}
-
-button[disabled],
-html input[disabled] {
-  cursor: default;
-}
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-input {
-  line-height: normal;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  padding: 0;
-}
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-
-legend {
-  border: 0;
-  padding: 0;
-}
-
-textarea {
-  overflow: auto;
-}
-
-optgroup {
-  font-weight: bold;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-td,
-th {
-  padding: 0;
-}
-
-/*--------------------------------------------------------------
-# Typography
---------------------------------------------------------------*/
-h1, h2, h3, h4, h5, h6 {
-  clear: both;
-  color: #24292e;
-  font-weight: 600;
-  margin-top: 24px;
-  margin-bottom: 15px;
-}
-
-p {
-  margin-bottom: 1.5em;
-}
-h1.entry-title {
-  font-size: 1.31rem;
-  border-bottom: 1px solid #eaecef;
-}
-h2.entry-title {
-  border-bottom: 1px solid #eaecef;
-}
-h3.widget-title {
-  font-size: 1.2rem;
-}
-
-/*--------------------------------------------------------------
-# Elements
---------------------------------------------------------------*/
-body {
-  background: #fff;
-  /* Fallback for when there is no custom background color defined. */
-}
-
-img {
-  height: auto;
-  /* Make sure images are scaled correctly. */
-  max-width: 100%;
-  /* Adhere to container width. */
-}
-
-figure {
-  margin: 1em 0;
-  /* Extra wide images within figure tags don't overflow the content area. */
-}
-
-table {
-  margin: 0 0 1.5em;
-  width: 100%;
-}
 
 /*--------------------------------------------------------------
 # Forms
@@ -297,15 +73,15 @@ header#masthead {
   padding-right: 0;
 }
 
-body:not(.theme-preset-active) #masthead .navbar-nav > li > a {
+body #masthead .navbar-nav > li > a {
   color: #cdbfe3;
   padding: 0.5rem;
   font-weight: 500;
   font-size: 1.4rem;
 }
 
-body:not(.theme-preset-active) #masthead .navbar-nav > li > a:hover,
-body:not(.theme-preset-active) #masthead .navbar-nav > li.current_page_item > a {
+body #masthead .navbar-nav > li > a:hover,
+body #masthead .navbar-nav > li.current_page_item > a {
   color: #fff;
   font-weight: 600;
 }
@@ -892,7 +668,7 @@ object {
 footer#colophon {
   font-size: 85%;
 }
-body:not(.theme-preset-active) footer#colophon {
+body footer#colophon {
   color: #99979c;
   background-color: #f7f7f7;
 }

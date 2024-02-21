@@ -13,7 +13,7 @@
 
 html {
   font-family: sans-serif; /* 1 */
-  line-height: 1.15; /* 2 */
+  line-height: 1.35; /* 2 */
   -ms-text-size-adjust: 100%; /* 3 */
   -webkit-text-size-adjust: 100%; /* 3 */
 }
@@ -27,18 +27,25 @@ html {
 
 body {
   margin: 0;
+  -webkit-font-smoothing: auto;
 }
 
 /**
  * Add the correct display in IE 9-.
  */
 
-article,
-aside,
-footer,
-header,
-nav,
-section {
+ article,
+ aside,
+ details,
+ figcaption,
+ figure,
+ footer,
+ header,
+ main,
+ menu,
+ nav,
+ section,
+ summary {
   display: block;
 }
 
@@ -71,7 +78,7 @@ main { /* 1 */
  */
 
 figure {
-  margin: 1em 40px;
+  margin: 1em 20px;
 }
 
 /**
@@ -205,6 +212,16 @@ sup {
   top: -0.5em;
 }
 
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  td,
+  th {
+    padding: 0;
+  }
+
 /* Embedded content
    ========================================================================== */
 
@@ -212,9 +229,12 @@ sup {
  * Add the correct display in IE 9-.
  */
 
-audio,
-video {
+ audio,
+ canvas,
+ progress,
+ video {
   display: inline-block;
+  vertical-align: baseline;
 }
 
 /**
@@ -257,9 +277,13 @@ select,
 textarea {
   font-family: sans-serif; /* 1 */
   font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
+  line-height: 1.35; /* 1 */
   margin: 0; /* 2 */
 }
+
+optgroup {
+    font-weight: bold;
+  }
 
 /**
  * Show the overflow in IE.
@@ -292,6 +316,12 @@ html [type="button"], /* 1 */
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button; /* 2 */
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
 }
 
 /**
