@@ -38,8 +38,8 @@ if ( post_password_required() ) {
             } else {
                 printf( // WPCS: XSS OK.
 					/* translators: 1: comment count number, 2: title. */
-					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $underscore_comment_count, 'comments title', 'dm-theme-boilerplate' ) ),
-					esc_html( number_format_i18n( $underscore_comment_count ) ),
+					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $comments_number, 'comments title', 'dm-theme-boilerplate' ) ),
+					esc_html( number_format_i18n( $comments_number ) ),
 					'<span>' . esc_html( get_the_title() ) . '</span>'
 				);
             }
@@ -101,7 +101,7 @@ if ( post_password_required() ) {
 
         'comment_notes_after' => '<p class="form-allowed-tags">' .
             __( 'You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:', 'dm-theme-boilerplate' ) .
-            '</p><div class="alert alert-info">' . allowed_tags() . '</div>'
+            '</p><div class="alert alert-info mb-5">' . allowed_tags() . '</div>'
 
 
         // Checkout the docs for more: http://codex.wordpress.org/Function_Reference/comment_form
