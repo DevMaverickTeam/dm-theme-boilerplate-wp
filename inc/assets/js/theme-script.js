@@ -1,10 +1,10 @@
 jQuery( function ( $ ) {
     'use strict';
     // here for each comment reply link of WordPress
-    $( '.comment-reply-link' ).addClass( 'btn btn-primary' );
+    $( '.comment-reply-link' ).addClass( 'btn dm-btn' );
 
     // here for the submit button of the comment reply form
-    $( '#commentsubmit' ).addClass( 'btn btn-primary' );
+    $( '#commentsubmit' ).addClass( 'btn dm-btn' );
 
     // The WordPress Default Widgets
     // Now we'll add some classes for the WordPress default widgets - let's go

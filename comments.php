@@ -103,9 +103,7 @@ if ( post_password_required() ) {
             __( 'You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:', 'dm-theme-boilerplate' ) .
             '</p><div class="alert alert-info">' . allowed_tags() . '</div>'
 
-        // So, that was the needed stuff to have bootstrap basic styles for the form elements and buttons
 
-        // Basically you can edit everything here!
         // Checkout the docs for more: http://codex.wordpress.org/Function_Reference/comment_form
         // Another note: some classes are added in the bootstrap-wp.js - ckeck from line 1
 

@@ -168,7 +168,7 @@ function dm_theme_boilerplate_password_form() {
     $label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
     $o = '<form action="' . esc_url( home_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post">
     <div class="d-block mb-3">' . __( "To view this protected post, enter the password below:", "dm-theme-boilerplate" ) . '</div>
-    <div class="form-group form-inline"><label for="' . $label . '" class="mr-2">' . __( "Password:", "dm-theme-boilerplate" ) . ' </label><input name="post_password" id="' . $label . '" type="password" size="20" maxlength="20" class="form-control mr-2" /> <input type="submit" name="Submit" value="' . esc_attr__( "Submit", "dm-theme-boilerplate" ) . '" class="btn btn-primary"/></div>
+    <div class="form-group form-inline"><label for="' . $label . '" class="mr-2">' . __( "Password:", "dm-theme-boilerplate" ) . ' </label><input name="post_password" id="' . $label . '" type="password" size="20" maxlength="20" class="form-control mr-2" /> <input type="submit" name="Submit" value="' . esc_attr__( "Submit", "dm-theme-boilerplate" ) . '" class="btn dm-btn"/></div>
     </form>';
     return $o;
 }
