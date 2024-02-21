@@ -2,3 +2,18 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+.dm-btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 1.6rem;
+    background-color: $brand-color;
+    border: 1px solid $brand-color;  
+    color: $white;
+    text-decoration: none!important;
+
+    @include on-event {
+        background-color: $dark-blue;
+        border: 1px solid $dark-blue;
+        color: $white;
+    }
+}

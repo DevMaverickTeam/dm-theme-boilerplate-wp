@@ -8,14 +8,15 @@ header {
         margin-bottom: 0;
         background-color: $dark-blue;
         box-shadow: 0 0.5rem 1rem rgba($black, .05), inset 0 -1px 0 rgba($black, .1);
-        padding: .74rem 1rem;
+        padding: 1.8rem 1rem;
     }
 }
 
 .navbar-brand {
-    >a {
+    > a {
         color: rgba($black, 0.9);
-        font-size: 1.8rem;
+        font-size: 2rem;
+        font-family: $firacode;
         outline: medium none;
         text-decoration: none;
         color: $white;
@@ -35,15 +36,17 @@ header {
 
 body #masthead {
     .navbar-nav>li {
-        >a {
-            color: #cdbfe3;
+        > a {
+            color: $white;
             padding: 0.5rem;
-            font-weight: 500;
+            font-weight: 600;
             font-size: 1.4rem;
+            border-bottom: 1px solid transparent;
 
             @include on-event {
                 color: $white;
-                font-weight: 600;
+                border-bottom: 1px solid $white;
+                text-decoration: none;
             }
 
             @include md {
@@ -57,15 +60,18 @@ body #masthead {
             }
         }
 
-        .current_page_item>a {
+        .current_page_item > a {
             color: $white;
-            font-weight: 600;
+            border-bottom: 1px solid $white;
+            text-decoration: none;
         }
     }
 
 }
 
 .navbar-nav {
+    column-gap: 2.5rem;
+
     .dropdown-menu {
         @include lg {
             background: transparent;

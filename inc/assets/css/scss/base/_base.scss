@@ -70,6 +70,12 @@ table {
     width: 100%;
 }
 
+textarea {
+    &.form-control {
+        font-size: 1.6rem;
+        padding: 2rem;
+    }
+}
 
 .page-content .wp-smiley,
 .entry-content .wp-smiley,
@@ -151,4 +157,32 @@ object {
 #content.site-content {
     padding-bottom: 3.75rem;
     padding-top: 4.125rem;
+}
+
+
+code, kbd, samp {
+    font-family: $firacode;
+}
+
+code {
+    background: $light-blue;
+    color: $dark-blue;
+}
+
+blockquote {
+    background: $light-blue;
+    padding: 1.5rem;
+    color: $dark-blue;
+
+    p {
+        color: $dark-blue;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
 }

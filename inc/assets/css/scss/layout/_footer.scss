@@ -4,16 +4,18 @@
 // -----------------------------------------------------------------------------
 
 footer {
-    color: #99979c;
-    background-color: #f7f7f7;
+    color: $text-color;
+    background-color: $white;
 
     &#colophon {
         font-size: 85%;
+        color: $white;
+        background-color: $dark-blue;
     }
 }
 
 .navbar-dark .site-info {
-    color: #fff;
+    color: $white;
 }
 
 .copyright {
@@ -25,4 +27,8 @@ footer {
 .copyright a,
 footer#colophon a {
     color: inherit;
+}
+
+#footer-widget {
+    background-color: $light-grey;
 }

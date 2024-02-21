@@ -108,8 +108,17 @@
     margin-top: 0;
 }
 
-.post.hentry {
-    margin-bottom: 4rem;
+.post {
+    .hentry {
+        margin-bottom: 4rem;
+    }
+
+    .entry-content{
+        a {
+            text-decoration: underline;
+            font-weight: 600;
+        }
+    }
 }
 
 .posted-on,
