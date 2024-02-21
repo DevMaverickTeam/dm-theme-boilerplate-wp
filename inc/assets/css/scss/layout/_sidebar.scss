@@ -1,0 +1,17 @@
+aside {
+    &#secondary {
+        padding-left: 2.5rem;
+    }
+}
+
+.wp-block-latest-comments {
+    padding-left: 0;
+
+    li {
+        margin-bottom: 0.5rem;
+        
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}

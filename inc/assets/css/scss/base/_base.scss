@@ -161,6 +161,14 @@ object {
     min-height: calc(100vh - 115px);
 }
 
+input {
+    border: 1px solid $dark-blue;
+
+    &[type=search] {
+        border: 1px solid $dark-blue; 
+    }
+}
+
 
 code, kbd, samp {
     font-family: $firacode;

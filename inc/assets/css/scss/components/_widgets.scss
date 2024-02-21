@@ -1,9 +1,50 @@
 .widget {
-    margin: 0 0 1.5em;
-    font-size: 1.4rem;
+    padding: 3rem 0;
+    border-bottom: 1px solid $light-blue;
+    font-size: 1.6rem;
 
     select {
         max-width: 100%;
+    }
+
+    h2 {
+        font-size: 3rem;
+        margin-top: 0;
+    }
+
+    h3 {
+        margin-top: 0;
+    }
+
+    ul,
+    ol {
+        li {
+            margin-bottom: 0.8rem;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+
+            a {
+                padding: 0;
+                display: inline-block;
+                color: $brand-color;
+
+                @include on-event {
+                    color: $brand-color;
+                    text-decoration: underline;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+aside {
+    .widget {
+        &:last-of-type {
+            border: none;
+        }
     }
 }
 
@@ -13,4 +54,10 @@
 
 .widget_categories .nav-link {
     display: inline-block;
+}
+
+#footer-widget {
+    .widget {
+        border: none;
+    }
 }
