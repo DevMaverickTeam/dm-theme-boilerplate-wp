@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 define('DM_BOILERPPLATE_VERSION',  '1.0.1');
 
 /**
- * DM Theme Boilerplate functions and definitions
+ * DM Boilerplate functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
@@ -26,7 +26,7 @@ function dm_theme_boilerplate_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on DM Theme Boilerplate, use a find and replace
+	 * If you're building a theme based on DM Boilerplate, use a find and replace
 	 * to change 'dm-theme-boilerplate' to the name of your theme in all the template files.
 	 */
 	load_theme_textdomain( 'dm-theme-boilerplate', get_template_directory() . '/languages' );
@@ -90,7 +90,7 @@ function dm_theme_boilerplate_reminder(){
         $theme_page_url = 'https://afterimagedesigns.com/dm-theme-boilerplate/?dashboard=1';
 
             if(!get_option( 'triggered_welcomet')){
-                $message = sprintf(__( 'Welcome to DM Theme Boilerplate Theme! Before diving in to your new theme, please visit the <a style="color: #fff; font-weight: bold;" href="%1$s" target="_blank">theme\'s</a> page for access to dozens of tips and in-depth tutorials.', 'dm-theme-boilerplate' ),
+                $message = sprintf(__( 'Welcome to DM Boilerplate Theme! Before diving in to your new theme, please visit the <a style="color: #fff; font-weight: bold;" href="%1$s" target="_blank">theme\'s</a> page for access to dozens of tips and in-depth tutorials.', 'dm-theme-boilerplate' ),
                     esc_url( $theme_page_url )
                 );
 

@@ -1,4 +1,4 @@
-=== DM Theme Boilerplate ===
+=== DM Boilerplate ===
 
 Tags: blog, custom-menu, featured-images, threaded-comments, translation-ready, right-sidebar, e-commerce, sticky-post, full-width-template
 Requires at least: 4.0
@@ -46,7 +46,7 @@ This theme will be an active project which we will update from time to time. Che
 
 = Does this theme support any plugins? =
 
-DM Theme Boilerplate includes support for Infinite Scroll in Jetpack.
+DM Boilerplate includes support for Infinite Scroll in Jetpack.
 
 == Credits ==
 
