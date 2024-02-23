@@ -87,7 +87,7 @@ add_action( 'after_setup_theme', 'dm_theme_boilerplate_setup' );
  * Add Welcome message to dashboard
  */
 function dm_theme_boilerplate_reminder(){
-        $theme_page_url = 'https://devmaverick.com/dm-boilerplate/?wp-dashboard-install=1';
+        $theme_page_url = 'https://devmaverick.com/themes/dm-boilerplate/?wp-dashboard-install=1';
 
             if(!get_option( 'triggered_welcomet')){
                 $message = sprintf(__( 'Welcome to DM Boilerplate Theme! Before starting with the new theme, please visit the <a style="color: #fff; font-weight: bold;" href="%1$s" target="_blank">theme\'s</a> page for more information about how to use it.', 'dm-boilerplate' ),
