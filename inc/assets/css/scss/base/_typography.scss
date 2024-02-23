@@ -27,12 +27,12 @@ h1 {
 
     @include sm {
         font-size: 4rem;
-        line-height: 5.6rem;
+        line-height: 5.0rem;
     }
 
     @include xs {
         font-size: 3.2rem; 
-        line-height: 4.4rem;
+        line-height: 4.0rem;
     }
 }
 
@@ -42,7 +42,7 @@ h2 {
 
     @include sm {
         font-size: 3.2rem; 
-        line-height: 4.4rem;
+        line-height: 4.0rem;
     }
 
     @include xs {

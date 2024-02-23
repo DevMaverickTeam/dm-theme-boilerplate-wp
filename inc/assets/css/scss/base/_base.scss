@@ -163,6 +163,11 @@ object {
     padding-top: 5rem;
 
     min-height: calc(100vh - 115px);
+
+    @include md {
+        padding-bottom: 3rem;
+        padding-top: 3rem; 
+    }
 }
 
 input {
