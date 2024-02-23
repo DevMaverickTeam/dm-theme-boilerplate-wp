@@ -1,7 +1,7 @@
 {
     "name": "dm-boilerplate",
     "version": "1.0.0",
-    "description": "SharkTank Theme Package",
+    "description": "DM Boilerplate Package",
     "main": "index.js",
     "directories": {
       "doc": "docs"
@@ -12,14 +12,14 @@
     },
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/DevMaverickTeam/dm-sharktank-child-theme.git"
+      "url": "git+https://github.com/DevMaverickTeam/dm-theme-boilerplate.git"
     },
     "author": "DevMaverick",
     "license": "ISC",
     "bugs": {
-      "url": "https://github.com/DevMaverickTeam/dm-sharktank-child-theme/issues"
+      "url": "https://github.com/DevMaverickTeam/dm-theme-boilerplate/issues"
     },
-    "homepage": "https://github.com/DevMaverickTeam/dm-sharktank-child-theme#readme",
+    "homepage": "https://github.com/DevMaverickTeam/dm-theme-boilerplate#readme",
     "devDependencies": {
       "sass": "^1.68.0"
     }
