@@ -49,9 +49,9 @@ Nothing fancy, just making the ACF easier to navigate on the Admin side.
 ### Shortcodes
 `shortcodes.php` will allow you to manage the WordPress shortcodes from a single place. 
 In there you will find 3 example of shortcodes that can be used, with associated files already:
-- dm-shortcode-passing-variable: renders content from a file while passing a variable
-- dm-shortcode-rendered-only-on-front: renders content from a file, but not on admin side
-- dm-shortcode-simple: renders content from a file
+- `dm-shortcode-passing-variable`: renders content from a file while passing a variable
+- `dm-shortcode-rendered-only-on-front`: renders content from a file, but not on admin side
+- `dm-shortcode-simple`: renders content from a file
 
 ### Custom Post Types
 `post-types.php` contains examples on how to define Custom Post Types.
