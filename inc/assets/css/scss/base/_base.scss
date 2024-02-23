@@ -133,6 +133,10 @@ object {
     text-align: center;
 }
 
+.wp-lightbox-overlay .scrim {
+    background-color: rgba($white, 0.75)!important;
+}
+
 
 .sticky {
     .entry-title {
