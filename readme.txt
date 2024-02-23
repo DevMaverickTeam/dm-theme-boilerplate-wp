@@ -12,9 +12,9 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 == Description ==
 
-This is a WordPress boilerplate / starter theme. The purpose of this theme is to be the starting point for your new WordPress project. While this theme was created to be a boilderplate, you can still use it as it is for your website. The theme is light, bloatware free and created based on our years of developing different WordPress projects. The theme uses: Bootstrap 5, Material Symbols and is build based on _s. Page templates includes Right-sidebar (default template), Full Width, Blank with container, Blank no container. Other features: Widgetized footer area, WooCommerce ready, Compatible with Contact Form 7, Compatible with Visual Composer, Compatible with WPBakery, Compatible with Elementor. 
+This is a WordPress boilerplate/starter theme. The purpose of this theme is to be the starting point for your new WordPress project. While this theme was created to be a boilerplate, you can still use it as it is for your website. The theme is light, bloatware-free, and created based on our years of developing different WordPress projects. The theme uses: Bootstrap 5, Material Symbols, and is built based on _s. Page templates include a Right-sidebar (default template), Full Width, Blank with container, and Blank no container. Other features: Widgetized footer area, WooCommerce ready, Compatible with Contact Form 7, Compatible with Visual Composer, Compatible with WPBakery, Compatible with Elementor. 
 
-This theme, like WordPress, is licensed under the GPL. You can use this theme as base for your next WordPress theme project and you are allowed to remove the link at the footer or do whatever you want.
+This theme is licensed under the GPL. You can use this theme as you like.
 
 Page templates
 * Right-sidebar (default page template)
