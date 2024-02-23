@@ -1172,6 +1172,10 @@ footer#colophon a {
   padding: 2rem;
 }
 
+footer.wp-block-latest-comments__comment-meta {
+  background-color: transparent;
+}
+
 aside#secondary {
   padding-left: 2.5rem;
 }
