@@ -33,7 +33,7 @@
         if ( is_single() ) :
 			the_content();
         else :
-            the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'dm-theme-boilerplate' ) );
+            the_excerpt();
         endif;
 
 			wp_link_pages( array(
