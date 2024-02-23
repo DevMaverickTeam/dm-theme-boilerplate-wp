@@ -1,18 +1,17 @@
 === DM Boilerplate ===
-
-Tags: blog, custom-menu, featured-images, threaded-comments, translation-ready, right-sidebar, e-commerce, sticky-post, full-width-template
+Contributors: necroob
+Stable tag: 1.3
+Requires PHP: 7.4
 Requires at least: 4.7
-Tested up to: 6.3.4
-
-Copyright (c) 2024 by DevMaverick (https://devmaverick.com/)
-This Theme is distributed under the terms of the GNU GPL.
-
-License: GNU General Public License v3.0
+Tested up to: 6.4
+License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: blog, custom-menu, featured-images, threaded-comments, translation-ready, right-sidebar, e-commerce, sticky-post, full-width-template
 
 == Description ==
 
 This is a WordPress boilerplate/starter theme. The purpose of this theme is to be the starting point for your new WordPress project. While this theme was created to be a boilerplate, you can still use it as it is for your website. The theme is light, bloatware-free, and created based on our years of developing different WordPress projects. The theme uses: Bootstrap 5, Material Symbols, and is built based on _s. Page templates include a Right-sidebar (default template), Full Width, Blank with container, and Blank no container. Other features: Widgetized footer area, WooCommerce ready, Compatible with Contact Form 7, Compatible with Visual Composer, Compatible with WPBakery, Compatible with Elementor. 
+Check it here for more instructions: https://devmaverick.com/dm-boilerplate/
 
 This theme is licensed under the GPL. You can use this theme as you like.
 
@@ -31,25 +30,27 @@ Other features:
 * Compatible with Visual Composer / WPBakery
 * Compatible with Elementor
 
-== Installation ==
-
-1. In your admin panel, go to Appearance > Themes and click the Add New button.
-2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
-3. Click Activate to use your new theme right away.
-
-== Frequently Asked Questions ==
-
-= Does this theme support any plugins? =
-
-DM Boilerplate includes support for Infinite Scroll in Jetpack.
-
-== Credits ==
-
-* Based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
-* Bootstrap http://getbootstrap.com, (C) 2011-2015 Twitter, Inc., [MIT] (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-* WP Bootstrap Navwalker https://github.com/wp-bootstrap/wp-bootstrap-navwalker, [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html)
-
 == Changelog ==
 
-= 1.0 - Nov 13, 2016 =
-* Initial release
+= 1.0.1 =
+* Released: February 24, 2024
+
+
+== Copyright ==
+
+Copyright (c) 2024 by DevMaverick (https://devmaverick.com/)
+This Theme is distributed under the terms of the GNU GPL. You can use this theme as you like. 
+
+This theme bundles the following third-party resources:
+
+Fira Code
+https://fonts.google.com/specimen/Fira+Code
+
+Open Sans
+https://fonts.google.com/specimen/Open+Sans
+
+Halant
+https://fonts.google.com/specimen/Halant
+
+Bootstrap v5.3.2
+https://getbootstrap.com/docs/5.3/getting-started/introduction/
