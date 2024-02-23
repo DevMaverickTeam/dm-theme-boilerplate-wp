@@ -27,9 +27,9 @@ function dm_theme_boilerplate_setup() {
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
 	 * If you're building a theme based on DM Boilerplate, use a find and replace
-	 * to change 'dm-theme-boilerplate' to the name of your theme in all the template files.
+	 * to change 'dm-boilerplate' to the name of your theme in all the template files.
 	 */
-	load_theme_textdomain( 'dm-theme-boilerplate', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'dm-boilerplate', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -51,7 +51,7 @@ function dm_theme_boilerplate_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary', 'dm-theme-boilerplate' ),
+		'primary' => esc_html__( 'Primary', 'dm-boilerplate' ),
 	) );
 
 	/*
@@ -87,10 +87,10 @@ add_action( 'after_setup_theme', 'dm_theme_boilerplate_setup' );
  * Add Welcome message to dashboard
  */
 function dm_theme_boilerplate_reminder(){
-        $theme_page_url = 'https://afterimagedesigns.com/dm-theme-boilerplate/?dashboard=1';
+        $theme_page_url = 'https://afterimagedesigns.com/dm-boilerplate/?dashboard=1';
 
             if(!get_option( 'triggered_welcomet')){
-                $message = sprintf(__( 'Welcome to DM Boilerplate Theme! Before diving in to your new theme, please visit the <a style="color: #fff; font-weight: bold;" href="%1$s" target="_blank">theme\'s</a> page for access to dozens of tips and in-depth tutorials.', 'dm-theme-boilerplate' ),
+                $message = sprintf(__( 'Welcome to DM Boilerplate Theme! Before diving in to your new theme, please visit the <a style="color: #fff; font-weight: bold;" href="%1$s" target="_blank">theme\'s</a> page for access to dozens of tips and in-depth tutorials.', 'dm-boilerplate' ),
                     esc_url( $theme_page_url )
                 );
 
@@ -125,36 +125,36 @@ add_action( 'after_setup_theme', 'dm_theme_boilerplate_content_width', 0 );
  */
 function dm_theme_boilerplate_widgets_init() {
     register_sidebar( array(
-        'name'          => esc_html__( 'Sidebar', 'dm-theme-boilerplate' ),
+        'name'          => esc_html__( 'Sidebar', 'dm-boilerplate' ),
         'id'            => 'sidebar-1',
-        'description'   => esc_html__( 'Add widgets here.', 'dm-theme-boilerplate' ),
+        'description'   => esc_html__( 'Add widgets here.', 'dm-boilerplate' ),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget'  => '</section>',
         'before_title'  => '<h3 class="widget-title">',
         'after_title'   => '</h3>',
     ) );
     register_sidebar( array(
-        'name'          => esc_html__( 'Footer 1', 'dm-theme-boilerplate' ),
+        'name'          => esc_html__( 'Footer 1', 'dm-boilerplate' ),
         'id'            => 'footer-1',
-        'description'   => esc_html__( 'Add widgets here.', 'dm-theme-boilerplate' ),
+        'description'   => esc_html__( 'Add widgets here.', 'dm-boilerplate' ),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget'  => '</section>',
         'before_title'  => '<h3 class="widget-title">',
         'after_title'   => '</h3>',
     ) );
     register_sidebar( array(
-        'name'          => esc_html__( 'Footer 2', 'dm-theme-boilerplate' ),
+        'name'          => esc_html__( 'Footer 2', 'dm-boilerplate' ),
         'id'            => 'footer-2',
-        'description'   => esc_html__( 'Add widgets here.', 'dm-theme-boilerplate' ),
+        'description'   => esc_html__( 'Add widgets here.', 'dm-boilerplate' ),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget'  => '</section>',
         'before_title'  => '<h3 class="widget-title">',
         'after_title'   => '</h3>',
     ) );
     register_sidebar( array(
-        'name'          => esc_html__( 'Footer 3', 'dm-theme-boilerplate' ),
+        'name'          => esc_html__( 'Footer 3', 'dm-boilerplate' ),
         'id'            => 'footer-3',
-        'description'   => esc_html__( 'Add widgets here.', 'dm-theme-boilerplate' ),
+        'description'   => esc_html__( 'Add widgets here.', 'dm-boilerplate' ),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget'  => '</section>',
         'before_title'  => '<h3 class="widget-title">',
@@ -167,8 +167,8 @@ function dm_theme_boilerplate_password_form() {
     global $post;
     $label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
     $o = '<form action="' . esc_url( home_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post">
-    <div class="d-block mb-3">' . __( "To view this protected post, enter the password below:", "dm-theme-boilerplate" ) . '</div>
-    <div class="form-group form-inline"><label for="' . $label . '" class="mr-2">' . __( "Password:", "dm-theme-boilerplate" ) . ' </label><input name="post_password" id="' . $label . '" type="password" size="20" maxlength="20" class="form-control mr-2" /> <input type="submit" name="Submit" value="' . esc_attr__( "Submit", "dm-theme-boilerplate" ) . '" class="btn dm-btn"/></div>
+    <div class="d-block mb-3">' . __( "To view this protected post, enter the password below:", "dm-boilerplate" ) . '</div>
+    <div class="form-group form-inline"><label for="' . $label . '" class="mr-2">' . __( "Password:", "dm-boilerplate" ) . ' </label><input name="post_password" id="' . $label . '" type="password" size="20" maxlength="20" class="form-control mr-2" /> <input type="submit" name="Submit" value="' . esc_attr__( "Submit", "dm-boilerplate" ) . '" class="btn dm-btn"/></div>
     </form>';
     return $o;
 }

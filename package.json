@@ -1,5 +1,5 @@
 {
-    "name": "dm-theme-boilerplate",
+    "name": "dm-boilerplate",
     "version": "1.0.0",
     "description": "SharkTank Theme Package",
     "main": "index.js",
