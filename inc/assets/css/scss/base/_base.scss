@@ -205,3 +205,9 @@ figcaption {
     text-align: center;
     font-style: italic;
 }
+
+.dropdown-toggle::after {
+    content: "\e5c5";
+    font-family: $material-icons;
+    border: none;
+}
