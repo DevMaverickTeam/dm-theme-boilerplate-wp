@@ -87,15 +87,15 @@ add_action( 'after_setup_theme', 'dm_theme_boilerplate_setup' );
  * Add Welcome message to dashboard
  */
 function dm_theme_boilerplate_reminder(){
-        $theme_page_url = 'https://afterimagedesigns.com/dm-boilerplate/?dashboard=1';
+        $theme_page_url = 'https://devmaverick.com/dm-boilerplate/?wp-dashboard-install=1';
 
             if(!get_option( 'triggered_welcomet')){
-                $message = sprintf(__( 'Welcome to DM Boilerplate Theme! Before diving in to your new theme, please visit the <a style="color: #fff; font-weight: bold;" href="%1$s" target="_blank">theme\'s</a> page for access to dozens of tips and in-depth tutorials.', 'dm-boilerplate' ),
+                $message = sprintf(__( 'Welcome to DM Boilerplate Theme! Before starting with the new theme, please visit the <a style="color: #fff; font-weight: bold;" href="%1$s" target="_blank">theme\'s</a> page for more information about how to use it.', 'dm-boilerplate' ),
                     esc_url( $theme_page_url )
                 );
 
                 printf(
-                    '<div class="notice is-dismissible" style="background-color: #6C2EB9; color: #fff; border-left: none;">
+                    '<div class="notice is-dismissible" style="background-color: #112D4E; color: #fff; border-left: none;">
                         <p>%1$s</p>
                     </div>',
                     $message
