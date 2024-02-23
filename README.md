@@ -34,7 +34,9 @@ Other features:
 
 If you want to use this as your started point for development, you can do the followings. 
 * Get the repo
-* Run `npm install` to get SCSS set and working
+* Run `npm install`
+* Run `npm run watch` to get the SCSS working and generate the compiled file
+* Remove comments in `.gitignore` if don't want the compiled to appear as commited
 
 In `functions.php` at the bottom fo the file you will find a bunch of lines commented. 
 You can enable those based on your needs. 
