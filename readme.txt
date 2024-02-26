@@ -10,8 +10,9 @@ Tags: starter, boilerplate, bootstrap, blog, custom-menu, featured-images, threa
 
 == Description ==
 
-This is a WordPress boilerplate/starter theme. The purpose of this theme is to be the starting point for your new WordPress project. While this theme was created to be a boilerplate, you can still use it as it is for your website. The theme is light, bloatware-free, and created based on our years of developing different WordPress projects. The theme uses: Bootstrap 5, Material Symbols, and is built based on _s. Page templates include a Right-sidebar (default template), Full Width, Blank with container, and Blank no container. Other features: Widgetized footer area, WooCommerce ready, Compatible with Visual Composer, Compatible with WPBakery, Compatible with Elementor. 
-Check it here for more instructions: https://devmaverick.com/themes/dm-boilerplate/
+This is a WordPress boilerplate/starter theme. The purpose of this theme is to be the starting point for your new WordPress project. While this theme was created to be a boilerplate, you can still use it as it is for your website. The theme is light, bloatware-free, and created based on our years of developing different WordPress projects. The theme uses: Bootstrap 5, Material Symbols, and is built based on _s. Page templates include a Right-sidebar (default template), Full Width, Blank with container, and Blank no container.
+
+Other features: Widgetized footer area, WooCommerce ready, Compatible with Visual Composer, Compatible with WPBakery, Compatible with Elementor.
 
 This theme is licensed under the GPL. You can use this theme as you like.
 
@@ -32,7 +33,7 @@ Other features:
 == Changelog ==
 
 = 1.0.1 =
-* Released: February 24, 2024
+* Released: February 26, 2024
 
 
 == Copyright ==
