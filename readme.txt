@@ -6,7 +6,7 @@ Requires at least: 4.7
 Tested up to: 6.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
-Tags: starter, boilerplate, bootstrap, blog, custom-menu, featured-images, threaded-comments, translation-ready, right-sidebar, e-commerce, sticky-post, full-width-template
+Tags: blog, custom-menu, featured-images, threaded-comments, translation-ready, right-sidebar, e-commerce, sticky-post, full-width-template
 
 == Description ==
 

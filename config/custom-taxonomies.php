@@ -39,25 +39,26 @@ class DM_Project_Custom_Taxonomy {
         $custom_post_type = $data['custom_post_type'];
 
         $labels = array(
-            'name'               => _x( $plural, 'post type general name', 'dm-boilerplate' ),
-            'singular_name'      => _x( $singular, 'post type singular name', 'dm-boilerplate' ),
-            'menu_name'          => _x( $plural, 'admin menu', 'dm-boilerplate' ),
-            'name_admin_bar'     => _x( $singular, 'add new on admin bar', 'dm-boilerplate' ),
-            'add_new'            => _x( 'Add New', $singular, 'dm-boilerplate' ),
-            'add_new_item'       => __( 'Add New ' . $singular, 'dm-boilerplate' ),
-            'new_item'           => __( 'New ' . $singular, 'dm-boilerplate' ),
-            'edit_item'          => __( 'Edit ' . $singular, 'dm-boilerplate' ),
-            'view_item'          => __( 'View ' . $singular, 'dm-boilerplate' ),
-            'all_items'          => __( 'All ' . $plural, 'dm-boilerplate' ),
-            'search_items'       => __( 'Search ' . $plural, 'dm-boilerplate' ),
-            'parent_item_colon'  => __( 'Parent ' . $plural . ':', 'dm-boilerplate' ),
-            'not_found'          => __( 'No ' . $plural . ' found.', 'dm-boilerplate' ),
-            'not_found_in_trash' => __( 'No ' . $plural . ' found in Trash.', 'dm-boilerplate' )
+            'name'               => printf(_x( '%s', 'post type general name', 'dm-boilerplate' ), $plural),
+            'singular_name'      => printf(_x( '%s', 'post type singular name', 'dm-boilerplate' ), $singular),
+            'menu_name'          => printf(_x( '%s', 'admin menu', 'dm-boilerplate' ), $plural),
+            'name_admin_bar'     => printf(_x( '%s', 'add new on admin bar', 'dm-boilerplate' ), $singular),
+            'add_new'            => printf(__( 'Add New %s', 'dm-boilerplate'), $singular),
+
+            'add_new_item'       => printf(__( 'Add New %s', 'dm-boilerplate'), $singular),
+            'new_item'           => printf(__( 'New %s', 'dm-boilerplate'), $singular),
+            'edit_item'          => printf(__( 'Edit %s', 'dm-boilerplate'), $singular),
+            'view_item'          => printf(__( 'View %s', 'dm-boilerplate' ), $singular),
+            'all_items'          => printf(__( 'All %s', 'dm-boilerplate' ), $plural),
+            'search_items'       => printf(__( 'Search %s', 'dm-boilerplate' ), $plural),
+            'parent_item_colon'  => printf(__( 'Parent %s:', 'dm-boilerplate' ), $plural),
+            'not_found'          => printf(__( 'No %s found.', 'dm-boilerplate' ), $plural),
+            'not_found_in_trash' => printf(__( 'No %s found in Trash.', 'dm-boilerplate' ), $plural)
         );
 
         $args = array(
             'labels'             => $labels,
-            'description'        => __( $singular .'.', 'dm-boilerplate' ),
+            'description'        => printf(__( '%s.', 'dm-boilerplate' ), $singular),
             'public'             => true,
             'publicly_queryable' => true,
             'show_ui'            => true,

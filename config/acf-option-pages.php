@@ -8,14 +8,14 @@
         ));
 
         acf_add_options_sub_page(array(
-            'page_title'  => __('Child Settings Page 1'),
-            'menu_title'  => __('Child Settings Page 1'),
+            'page_title'  => __('Child Settings Page 1', 'dm-boilerplate'),
+            'menu_title'  => __('Child Settings Page 1', 'dm-boilerplate'),
             'parent_slug' => $parent['menu_slug'],
         ));
 
         acf_add_options_sub_page(array(
-            'page_title'  => __('Child Settings Page 2'),
-            'menu_title'  => __('Child Settings Page 2'),
+            'page_title'  => __('Child Settings Page 2', 'dm-boilerplate'),
+            'menu_title'  => __('Child Settings Page 2', 'dm-boilerplate'),
             'parent_slug' => $parent['menu_slug'],
         ));
         

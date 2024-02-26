@@ -13,7 +13,6 @@ class DM_Shortcodes {
 	}
 
 
-	// NB: Make sure to include "/" in the template path;
 	private function render_template($template_path = '', $variables = '') {
 		if ( is_admin() ) return 'This shortcode only works on the frontend';
 	
