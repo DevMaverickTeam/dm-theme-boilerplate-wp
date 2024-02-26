@@ -38,6 +38,10 @@ Other features:
 = 1.0.3 =
 * Fixed missing file on Template Tags
 
+= 1.0.4 =
+* Added theme support align-wisde, wp-block-styles, responsive-embeds, custom-logo, custom-header
+* Fixed translation issue on cart.php
+
 
 == Copyright ==
 
