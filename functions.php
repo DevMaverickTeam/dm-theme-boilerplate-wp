@@ -170,6 +170,18 @@ function dm_theme_boilerplate_password_form() {
 add_filter( 'the_password_form', 'dm_theme_boilerplate_password_form' );
 
 
+add_theme_support( 'align-wide' );
+add_theme_support( 'wp-block-styles' );
+add_theme_support( 'responsive-embeds' ); 
+add_theme_support( 'custom-logo', array(
+    'height'               => 80,
+    'width'                => 250,
+    'flex-height'          => true,
+    'flex-width'           => true,
+    'header-text'          => array( 'site-title', 'site-description' ),
+    'unlink-homepage-logo' => true,
+    ) );
+add_theme_support( 'custom-header' );
 
 /**
  * Custom template tags for this theme.
