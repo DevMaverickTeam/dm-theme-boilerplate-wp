@@ -35,6 +35,9 @@ Other features:
 = 1.0.1 =
 * Released: February 26, 2024
 
+= 1.0.3 =
+* Fixed missing file on Template Tags
+
 
 == Copyright ==
 
