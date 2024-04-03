@@ -1,5 +1,5 @@
 <?php
-define('DM_BOILERPPLATE_VERSION',  '1.0.5');
+define('DM_BOILERPPLATE_VERSION',  '1.0.7');
 
 /**
  * DM Boilerplate functions and definitions
