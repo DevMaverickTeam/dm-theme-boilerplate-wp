@@ -14,16 +14,13 @@ class DM_Project_AutoUpdateTheme
 {
 	private $infoJsonUrl = 'https://updates.server.com/some-folders/themes/dm-boilerplate-theme/info.json';
 	private $version = null; // Populate in constructor
-
-	public $cacheTransientName = 'dm_theme_autoupdate_transient';
-	private $themeFolderName = "dm-boilerplate-theme";
+	private $themeFolderName = null; // Populate in constructor
+	private $cacheTransientName = 'dm_theme_autoupdate_transient';
 
 	public function __construct()
 	{
 		$this->version = $this->getCurrentThemeVersion();
-
-		// Boilerplate. Do not delete. Use if applicable.
-		// $this->themeFolderName = get_template(); // Ex: "dm-boilerplate-theme"; // NOTE: This only works in 'parent' themes. For child themes there is an issue with no solution yet.
+		$this->themeFolderName = get_stylesheet(); // Returns folder name of the current theme, either child or parent. Ex: "divi-child"
 
 		add_filter('site_transient_update_themes', array($this, 'showAvalableUpdatesData'));
 		add_action('upgrader_process_complete', array($this, 'purge'), 10, 2);
