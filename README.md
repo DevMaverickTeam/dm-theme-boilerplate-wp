@@ -21,6 +21,13 @@ Other features:
 * Compatible with Visual Composer / WPBakery
 * Compatible with Elementor
 
+## Autoupdate Setup
+* Review all files in the /config/autoupdate folder.
+  * Replace all references to the dm-theme-boilerplate
+  * Update to the the correct info.json path
+  * Update the .js script to append the 'Check For Updates' button to the correct card in the WP Admin themes section.
+  * Ensure the autoupdate.php file is required in the functions.php file
+
 ---
 
 ## Installation

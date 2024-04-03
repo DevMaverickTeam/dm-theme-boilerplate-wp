@@ -208,6 +208,7 @@ if ( ! class_exists( 'wp_bootstrap_navwalker' )) {
 }
 
 
+require_once('config/autoupdate/autoupdate.php');
 require_once('config/assets.php');
 require_once('config/acf-style.php');
 // require_once('config/shortcodes.php');
