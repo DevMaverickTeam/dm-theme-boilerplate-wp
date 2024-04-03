@@ -115,10 +115,10 @@ class DM_Project_AutoUpdateTheme
 		}
 	}
 
-	// Only enqueue the dm-theme-autoupdate.js script on the /wp-admin/themes.php page
+	// Only enqueue the dm-theme-autoupdate.js script on the /wp-admin/themes.php or /wp-admin/network/themes.php pages
 	public function enqueueAdminAssets()
 	{
-		if ($_SERVER['REQUEST_URI'] != '/wp-admin/themes.php') return;
+		if (!str_contains($_SERVER['REQUEST_URI'], '/themes.php')) return;
 		
 		// JS
 		wp_register_script('dm-theme-autoupdate', get_stylesheet_directory_uri() . '/config/autoupdate/js/dm-theme-autoupdate.js', [], $this->version, true);
