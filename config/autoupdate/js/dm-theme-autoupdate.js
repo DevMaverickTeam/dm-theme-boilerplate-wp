@@ -7,7 +7,7 @@ jQuery(document).ready(function ($) {
 		$('div[data-slug=dm-boilerplate-theme] .theme-actions').prepend(button);
 
 		// Add a link on the Network Admin > Themes page (Multisite)
-		let link = '<a href="#" id="trigger-check-for-updates">Check For Updates</a>';
+		let link = '<a href="#" id="trigger-check-for-updates" style="color: green; font-weight: bold;">Check For Updates</a>';
 		$('tr[data-slug=dm-boilerplate-theme] .theme-version-author-uri').append(" | ");
 		$('tr[data-slug=dm-boilerplate-theme] .theme-version-author-uri').append(link);
 	}
