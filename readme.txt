@@ -1,9 +1,9 @@
 === DM Boilerplate ===
 Contributors: necroob
-Stable tag: 1.3
+Stable tag: 1.7
 Requires PHP: 7.4
 Requires at least: 4.7
-Tested up to: 6.4
+Tested up to: 6.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: blog, custom-menu, featured-images, threaded-comments, translation-ready, right-sidebar, e-commerce, sticky-post, full-width-template
@@ -19,6 +19,7 @@ This theme is licensed under the GPL. You can use this theme as you like.
 Page templates
 * Right-sidebar (default page template)
 * Full-Width
+* Full-Width No Container (recommended for Elementor and other visual builders)
 * Blank with container
 * Blank no container
 
@@ -30,6 +31,9 @@ Other features:
 * Compatible with Visual Composer / WPBakery
 * Compatible with Elementor
 
+Check full documentation:
+* [DM Boilerplate](https://devmaverick.com/themes/dm-boilerplate/)
+
 == Changelog ==
 
 = 1.0.7 =
@@ -38,7 +42,7 @@ Other features:
 
 == Copyright ==
 
-Copyright (c) 2024 by DevMaverick (https://devmaverick.com/)
+Copyright (c) 2024 by [DevMaverick](https://devmaverick.com/)
 This Theme is distributed under the terms of the GNU GPL. You can use this theme as you like. 
 
 This theme bundles the following third-party resources:
