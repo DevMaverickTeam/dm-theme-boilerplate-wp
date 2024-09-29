@@ -32,15 +32,8 @@ Other features:
 
 == Changelog ==
 
-= 1.0.1 =
-* Released: February 26, 2024
-
-= 1.0.3 =
-* Fixed missing file on Template Tags
-
-= 1.0.4 =
-* Added theme support align-wisde, wp-block-styles, responsive-embeds, custom-logo, custom-header
-* Fixed translation issue on cart.php
+= 1.0.7 =
+* Released on 2024-09-29
 
 
 == Copyright ==
