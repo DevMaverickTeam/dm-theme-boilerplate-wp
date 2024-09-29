@@ -16,20 +16,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="profile" href="http://gmpg.org/xfn/11">
-<?php wp_head(); ?>
+    <?php wp_head(); ?>
+    <?php get_template_part('template-parts/header/scripts'); ?>
 </head>
 
 <body <?php body_class(); ?>>
 
-<?php 
+    <?php get_template_part('template-parts/header/no','scripts'); ?>
 
+<?php 
     // WordPress 5.2 wp_body_open implementation
     if ( function_exists( 'wp_body_open' ) ) {
         wp_body_open();
     } else {
         do_action( 'wp_body_open' );
     }
-
 ?>
 
 <div id="page" class="site">
