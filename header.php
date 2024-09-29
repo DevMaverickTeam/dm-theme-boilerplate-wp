@@ -40,12 +40,12 @@
         <div class="container">
             <nav class="navbar navbar-expand-xl p-0">
                 <div class="navbar-brand">
-                    <?php if ( get_theme_mod( 'dm_theme_boilerplate_logo' ) ): ?>
+                    <?php if ( get_theme_mod( 'custom_logo' ) ): ?>
                         <a href="<?php echo esc_url( home_url( '/' )); ?>">
-                            <img src="<?php echo esc_url(get_theme_mod( 'dm_theme_boilerplate_logo' )); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
+                            <img src="<?php echo wp_get_attachment_image_url(get_theme_mod( 'custom_logo' )); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
                         </a>
                     <?php else : ?>
-                        <a class="site-title" href="<?php echo esc_url( home_url( '/' )); ?>"><?php esc_url(bloginfo('name')); ?></a>
+                        <a class="site-title" href="<?php echo esc_url( home_url( '/' )); ?>"><?php echo get_bloginfo(); ?></a>
                     <?php endif; ?>
 
                 </div>
