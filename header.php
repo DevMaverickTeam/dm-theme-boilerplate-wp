@@ -73,5 +73,5 @@
 	</header><!-- #masthead -->
     
 	<div id="content" class="site-content">
-		<div class="container">
+		<div class=<?php echo (is_page_template('full-width-no-container.php') ? 'container-fluid' : 'container') ?> >
 			<div class="row">
