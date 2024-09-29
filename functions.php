@@ -211,7 +211,3 @@ if ( ! class_exists( 'wp_bootstrap_navwalker' )) {
 require_once('config/autoupdate/autoupdate.php');
 require_once('config/assets.php');
 require_once('config/acf-style.php');
-// require_once('config/shortcodes.php');
-// require_once('config/post-types.php');
-// require_once('config/custom-taxonomies.php');
-// require_once('config/acf-option-pages.php');
