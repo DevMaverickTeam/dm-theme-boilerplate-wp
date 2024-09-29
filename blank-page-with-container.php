@@ -3,7 +3,7 @@
  * Template Name: Blank with Container
  */
 
-get_header();
+get_header('blank');
 ?>
     <section id="primary" class="content-area">
         <div id="main" class="site-main" role="main">
@@ -18,4 +18,4 @@ get_header();
     </section><!-- #primary -->
 
 <?php
-get_footer();
+get_footer('blank');
