@@ -26,6 +26,7 @@ class DM_Project_Assets {
         wp_register_script('dm-boilerplate-bootstrapjs', get_template_directory_uri() . '/inc/assets/js/bootstrap.min.js', [], DM_BOILERPPLATE_VERSION, true );
         wp_register_script('dm-boilerplate-themejs', get_template_directory_uri() . '/inc/assets/js/theme-script.min.js', [], DM_BOILERPPLATE_VERSION, true );
         wp_register_script( 'dm-script', get_template_directory_uri() . '/inc/assets/js/script.js', [], DM_BOILERPPLATE_VERSION, true );
+        wp_enqueue_script( 'dm-boilerplate-skip-link-focus', get_template_directory_uri() . '/inc/assets/js/skip-link-focus.min.js', [], DM_BOILERPPLATE_VERSION, true );
     }
 
 
