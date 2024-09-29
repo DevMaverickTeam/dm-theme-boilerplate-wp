@@ -21,13 +21,6 @@ Other features:
 * Compatible with Visual Composer / WPBakery
 * Compatible with Elementor
 
-## Autoupdate Setup
-* Review all files in the /config/autoupdate folder.
-  * Replace all references to the dm-theme-boilerplate
-  * Update to the the correct info.json path
-  * Update the .js script to append the 'Check For Updates' button to the correct card in the WP Admin themes section.
-  * Ensure the autoupdate.php file is required in the functions.php file
-
 ---
 
 ## Installation
@@ -54,21 +47,6 @@ In `functions.php` at the bottom of the file, you will find a bunch of lines com
 
 ### ACF Style
 `acf-style.php` includes some basic styles for the ACF plugin. Nothing fancy, just making the ACF easier to navigate on the Admin side.
-
-### Shortcodes
-`shortcodes.php` will allow you to manage the WordPress shortcodes from a single place. In there you will find 3 examples of shortcodes that can be used, with associated files already:
-- `dm-shortcode-passing-variable`: renders content from a file while passing a variable
-- `dm-shortcode-rendered-only-on-front`: renders content from a file, but not on the admin side
-- `dm-shortcode-simple`: renders content from a file
-
-### Custom Post Types
-`post-types.php` contains examples of how to define Custom Post Types.
-
-### Custom taxonomies
-`custom-taxonomies.php` contain examples of how to define Custom Taxonomies.
-
-### ACF Option Pages
-`acf-option-pages.php` contains examples on how to define the ACF Options page for your Admin Dashboard.
 
 ### Material Symbols
 The theme is using [Material Symbols](https://fonts.google.com/icons). 
