@@ -169,7 +169,6 @@ function dm_theme_boilerplate_password_form() {
 }
 add_filter( 'the_password_form', 'dm_theme_boilerplate_password_form' );
 
-
 add_theme_support( 'align-wide' );
 add_theme_support( 'wp-block-styles' );
 add_theme_support( 'responsive-embeds' ); 
