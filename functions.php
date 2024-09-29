@@ -181,7 +181,6 @@ add_theme_support( 'custom-logo', array(
     'header-text'          => array( 'site-title', 'site-description' ),
     'unlink-homepage-logo' => true,
     ) );
-add_theme_support( 'custom-header' );
 
 /**
  * Custom template tags for this theme.
