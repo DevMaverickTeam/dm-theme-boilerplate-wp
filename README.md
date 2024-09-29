@@ -10,6 +10,7 @@ This theme is licensed under the GPL. You can use this theme as you like.
 Page templates
 * Right-sidebar (default page template)
 * Full-Width
+* Full-Width No Container (recommended for Elementor and other visual builders)
 * Blank with container
 * Blank no container
 
